@@ -12,7 +12,7 @@ app.use(express.json())
 const { GIRLFRIEND } = require('./utils/constants');
 
 const client = new Client({
-  authStrategy: new LocalAuth(),
+  // authStrategy: new LocalAuth(),
   puppeteer: { headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] }
 });
 
